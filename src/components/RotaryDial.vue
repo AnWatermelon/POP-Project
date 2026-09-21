@@ -85,19 +85,22 @@ function select(i) {
   width: min(70vmin, 480px);
   aspect-ratio: 1 / 1;
   border-radius: 50%;
-  background: radial-gradient(circle at 35% 30%, #3a2c22, #17110c 70%);
+  background: radial-gradient(circle at 35% 30%, #873648, var(--wine-plum) 45%, #461622 80%);
   box-shadow:
-    0 0 0 6px #0d0906,
-    0 20px 40px rgba(0, 0, 0, 0.5),
-    inset 0 0 30px rgba(0, 0, 0, 0.6);
+    0 0 0 6px #3b111b,
+    0 20px 40px rgba(58, 86, 131, 0.22),
+    0 10px 24px rgba(107, 39, 55, 0.25),
+    inset 0 0 25px rgba(35, 9, 16, 0.7);
 }
 
 .rotary__face {
   position: absolute;
   inset: 8%;
   border-radius: 50%;
-  background: radial-gradient(circle at 40% 35%, #f5ecd8, #e4d5b0 75%);
-  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.35);
+  background: radial-gradient(circle at 40% 35%, #ffffff, var(--bright-snow) 60%, #eee8df 85%);
+  box-shadow:
+    inset 0 0 15px rgba(58, 86, 131, 0.15),
+    inset 0 2px 4px rgba(255, 255, 255, 0.85);
   transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
@@ -108,43 +111,47 @@ function select(i) {
   transform: translate(-50%, -50%);
   border-radius: 50%;
   border: none;
-  background: radial-gradient(circle at 40% 35%, #2a1e16, #120c08 80%);
-  color: var(--color-cream);
+  background: radial-gradient(circle at 40% 35%, #3515b5, #1c0576 80%);
+  color: var(--bright-snow);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 2px;
   cursor: pointer;
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.6);
+  box-shadow:
+    inset 0 0 7px rgba(10, 2, 45, 0.8),
+    0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .rotary__hole:hover {
-  background: radial-gradient(circle at 40% 35%, #3a291d, #1a120c 80%);
+  background: radial-gradient(circle at 40% 35%, #441ecc, var(--navy-electric) 80%);
 }
 
 .rotary__hole:focus-visible {
-  outline: 3px solid var(--color-accent);
+  outline: 3px solid var(--seagrass);
   outline-offset: 3px;
 }
 
 .rotary__hole--active {
   box-shadow:
-    inset 0 0 6px rgba(0, 0, 0, 0.6),
-    0 0 0 3px var(--color-accent);
+    inset 0 0 6px rgba(10, 2, 45, 0.8),
+    0 0 0 3.5px var(--seagrass);
 }
 
 .rotary__digit {
   font-family: var(--font-display);
   font-size: clamp(0.9rem, 2.4vmin, 1.4rem);
   line-height: 1;
+  color: var(--bright-snow);
 }
 
 .rotary__label {
   font-family: var(--font-body);
   font-size: clamp(0.5rem, 1.1vmin, 0.7rem);
   letter-spacing: 0.02em;
-  opacity: 0.85;
+  color: var(--bright-snow);
+  opacity: 0.95;
 }
 
 .rotary__stop {
@@ -153,31 +160,34 @@ function select(i) {
   left: 50%;
   width: 6%;
   height: 10%;
-  background: #0d0906;
+  background: #3b111b;
   border-radius: 3px;
   transform: translateX(-50%);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .rotary__hub {
   position: absolute;
   inset: 38%;
   border-radius: 50%;
-  background: #17110c;
+  background: radial-gradient(circle at 40% 35%, #4e1826, #2d0b14 85%);
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow:
-    0 0 0 4px #0d0906,
-    inset 0 0 10px rgba(0, 0, 0, 0.6);
+    0 0 0 4px #3b111b,
+    inset 0 0 12px rgba(20, 4, 8, 0.7);
   pointer-events: none;
 }
 
 .rotary__hub-label {
   font-family: var(--font-display);
-  color: var(--color-accent);
+  color: var(--seagrass);
   font-size: clamp(0.75rem, 1.8vmin, 1.1rem);
   text-align: center;
   padding: 0 10%;
+  font-weight: 600;
+  letter-spacing: 0.02em;
 }
 
 @media (prefers-reduced-motion: reduce) {

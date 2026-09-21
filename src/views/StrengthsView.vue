@@ -42,7 +42,7 @@ const strengths = [
   margin: 0 0 0.35rem;
   font-family: var(--font-display);
   font-size: 1rem;
-  color: var(--color-accent);
+  color: var(--wine-plum);
 }
 .strength-list p {
   margin: 0;

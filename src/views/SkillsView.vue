@@ -73,7 +73,7 @@ const skillGroups = [
 }
 .skill-group h3 {
   font-family: var(--font-display);
-  color: var(--color-accent);
+  color: var(--wine-plum);
   font-size: 0.95rem;
   margin: 0 0 0.6rem;
   text-transform: uppercase;
@@ -88,7 +88,8 @@ const skillGroups = [
 .skill-list li {
   padding: 0.85rem 1rem;
   border-radius: 8px;
-  background: rgba(245, 236, 216, 0.04);
+  background: rgba(58, 86, 131, 0.05);
+  border: 1px solid rgba(58, 86, 131, 0.1);
 }
 .skill-name {
   font-family: var(--font-display);

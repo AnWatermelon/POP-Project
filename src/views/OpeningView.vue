@@ -28,8 +28,10 @@
   width: 96px;
   height: 96px;
   border-radius: 50%;
-  background: radial-gradient(circle at 40% 35%, #3a2c22, #17110c 80%);
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.6), 0 0 0 3px rgba(201, 162, 39, 0.35);
+  background: radial-gradient(circle at 40% 35%, #873648, #461622 80%);
+  box-shadow:
+    inset 0 0 10px rgba(0, 0, 0, 0.4),
+    0 0 0 3px var(--seagrass);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,7 +40,7 @@
 .avatar-placeholder span {
   font-family: var(--font-display);
   font-size: 0.8rem;
-  color: var(--color-text-muted);
+  color: var(--bright-snow);
 }
 
 /* Swap the placeholder above for a real headshot, e.g.:
@@ -55,7 +57,7 @@
 }
 
 .trait strong {
-  color: var(--color-accent);
+  color: var(--wine-plum);
 }
 
 .trait-note {

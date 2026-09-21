@@ -1,10 +1,27 @@
 :root {
-  --color-bg: #1b1410;
-  --color-bg-alt: #241a14;
-  --color-cream: #f5ecd8;
-  --color-text: #f5ecd8;
-  --color-text-muted: #b8a58a;
-  --color-accent: #c9a227;
+  /* CSS HEX */
+  --wine-plum: #6b2737;
+  --bright-snow: #fbfaf8;
+  --seagrass: #639a88;
+  --dusk-blue: #3a5683;
+  --navy-electric: #2708a0;
+
+  /* CSS HSL */
+  --wine-plum-hsl: hsla(346, 47%, 29%, 1);
+  --bright-snow-hsl: hsla(40, 27%, 98%, 1);
+  --seagrass-hsl: hsla(160, 22%, 50%, 1);
+  --dusk-blue-hsl: hsla(217, 39%, 37%, 1);
+  --navy-electric-hsl: hsla(252, 90%, 33%, 1);
+
+  /* Semantic Theme Tokens */
+  --color-bg: var(--bright-snow);
+  --color-bg-alt: #ffffff;
+  --color-cream: var(--bright-snow);
+  --color-text: #202b3c;
+  --color-text-muted: var(--dusk-blue);
+  --color-accent: var(--navy-electric);
+  --color-brand: var(--wine-plum);
+  --color-highlight: var(--seagrass);
 
   --font-display: 'Special Elite', 'Courier New', monospace;
   --font-body: 'Work Sans', system-ui, sans-serif;
@@ -40,13 +57,20 @@ button:focus-visible {
   background: var(--color-bg-alt);
   border-radius: 12px;
   padding: clamp(1.5rem, 4vmin, 2.5rem);
-  box-shadow: inset 0 0 0 1px rgba(245, 236, 216, 0.08);
+  box-shadow:
+    0 10px 30px -5px rgba(58, 86, 131, 0.08),
+    0 0 0 1px rgba(58, 86, 131, 0.12);
 }
 
 .view-page h2 {
   font-family: var(--font-display);
   margin-top: 0;
   color: var(--color-accent);
+}
+
+.view-page h3 {
+  font-family: var(--font-display);
+  color: var(--color-brand);
 }
 
 .view-page p {

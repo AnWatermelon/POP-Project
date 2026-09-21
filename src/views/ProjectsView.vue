@@ -37,11 +37,13 @@ const projects = [
 .project-list li {
   padding: 1rem;
   border-radius: 8px;
-  background: rgba(245, 236, 216, 0.04);
+  background: rgba(58, 86, 131, 0.05);
+  border: 1px solid rgba(58, 86, 131, 0.1);
 }
 .project-list h3 {
   margin: 0 0 0.25rem;
   font-family: var(--font-display);
   font-size: 1rem;
+  color: var(--wine-plum);
 }
 </style>

@@ -44,6 +44,7 @@ const route = useRoute()
   font-size: clamp(1.5rem, 4vmin, 2.5rem);
   letter-spacing: 0.03em;
   margin: 0;
+  color: var(--color-brand);
 }
 
 .app-tagline {
