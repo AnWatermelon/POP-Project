@@ -9,10 +9,11 @@
 //   component - lazy-loaded view component
 
 export const entries = [
-  { id: 'home', label: 'Home', path: '/', component: () => import('../views/HomeView.vue') },
-  { id: 'about', label: 'About', path: '/about', component: () => import('../views/AboutView.vue') },
-  { id: 'projects', label: 'Projects', path: '/projects', component: () => import('../views/ProjectsView.vue') },
+  { id: 'opening', label: 'Opening', path: '/', component: () => import('../views/OpeningView.vue') },
+  { id: 'philosophy', label: 'Philosophy', path: '/philosophy', component: () => import('../views/PhilosophyView.vue') },
+  { id: 'orientation', label: 'Orientation', path: '/orientation', component: () => import('../views/OrientationView.vue') },
   { id: 'skills', label: 'Skills', path: '/skills', component: () => import('../views/SkillsView.vue') },
-  { id: 'experience', label: 'Experience', path: '/experience', component: () => import('../views/ExperienceView.vue') },
-  { id: 'contact', label: 'Contact', path: '/contact', component: () => import('../views/ContactView.vue') },
+  { id: 'strengths', label: 'Strengths', path: '/strengths', component: () => import('../views/StrengthsView.vue') },
+  { id: 'vision', label: 'Vision', path: '/vision', component: () => import('../views/VisionView.vue') },
+  { id: 'conclusion', label: 'Conclusion', path: '/conclusion', component: () => import('../views/ConclusionView.vue') },
 ]

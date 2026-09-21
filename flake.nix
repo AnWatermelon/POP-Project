@@ -16,11 +16,6 @@
           packages = [
             pkgs.nodejs_24
           ];
-
-          shellHook = ''
-            echo "node $(node --version) / npm $(npm --version)"
-            echo "Run 'npm install' once, then 'npm run dev'."
-          '';
         };
       });
 }
