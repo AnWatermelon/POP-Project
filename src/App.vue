@@ -8,10 +8,10 @@
     <div class="app-body">
       <RotaryDial class="app-dial" />
 
-      <main class="app-content">
-        <router-view v-slot="{ Component, route }">
+      <main class="app-content" :class="{ 'app-content--centered': route.name === 'opening' }">
+        <router-view v-slot="{ Component, route: currentRoute }">
           <transition name="spin-page" mode="out-in">
-            <component :is="Component" :key="route.path" class="view-page" />
+            <component :is="Component" :key="currentRoute.path" class="view-page" />
           </transition>
         </router-view>
       </main>
@@ -20,7 +20,10 @@
 </template>
 
 <script setup>
+import { useRoute } from 'vue-router'
 import RotaryDial from './components/RotaryDial.vue'
+
+const route = useRoute()
 </script>
 
 <style scoped>
@@ -55,6 +58,7 @@ import RotaryDial from './components/RotaryDial.vue'
   grid-template-columns: minmax(280px, 420px) 1fr;
   gap: clamp(1.5rem, 4vmin, 3rem);
   align-items: start;
+  align-content: start;
 }
 
 .app-dial {
@@ -64,6 +68,13 @@ import RotaryDial from './components/RotaryDial.vue'
 
 .app-content {
   min-height: 50vh;
+}
+
+@media (min-width: 861px) {
+  .app-content--centered {
+    align-self: center;
+    min-height: unset;
+  }
 }
 
 @media (max-width: 860px) {

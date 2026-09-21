@@ -5,27 +5,12 @@
         <span>Photo</span>
       </div>
       <div class="opening-intro">
-        <h2>Hi, I'm [Your Name].</h2>
+        <h2>Max Hilton</h2>
         <p class="trait">
-          Top leadership trait: <strong>Confidence</strong>
+          Top leadership trait: <strong>Conscientious</strong>
         </p>
       </div>
     </div>
-
-    <p>
-      Add a short line here about who you are and what you're studying or working
-      toward — this is the first thing a visitor sees, so keep it brief.
-    </p>
-
-    <p class="trait-note">
-      <!-- TODO: replace with your own self-assessment result from Vantage (Ch 2)
-           if it points somewhere else. Confidence is used here because it comes
-           up directly in your notes — projecting it as a lifeguard instructor
-           is part of what makes you effective at helping students improve. -->
-      Confidence shows up for me most clearly as a lifeguard instructor — projecting
-      it helps my students feel confident too, which is a big part of what makes
-      me effective at teaching them.
-    </p>
   </section>
 </template>
 
@@ -35,7 +20,7 @@
   align-items: center;
   gap: 1.25rem;
   flex-wrap: wrap;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 .avatar-placeholder {
