@@ -12,10 +12,10 @@
           :aria-current="i === activeIndex ? 'page' : undefined"
           @click="select(i)"
         >
-          <span class="rotary__digit" :style="{ transform: `rotate(${-rotation}deg)` }">
+          <span class="rotary__digit">
             {{ i + 1 }}
           </span>
-          <span class="rotary__label" :style="{ transform: `rotate(${-rotation}deg)` }">
+          <span class="rotary__label">
             {{ entry.label }}
           </span>
         </button>
@@ -57,13 +57,19 @@ const rotation = computed(() => -activeIndex.value * step)
 
 // Base position of button i, before the face's own rotation is applied.
 // Evenly spaced around the circle, starting at the top.
+// Counter-rotates by -rotation so the button and its contents (number on top,
+// title on bottom) stay upright as the dial rotates.
 function holeStyle(i) {
   const angle = -90 + i * step
   const rad = (angle * Math.PI) / 180
   const radius = 38 // percent of the dial's diameter
   const x = 50 + radius * Math.cos(rad)
   const y = 50 + radius * Math.sin(rad)
-  return { left: `${x}%`, top: `${y}%` }
+  return {
+    left: `${x}%`,
+    top: `${y}%`,
+    transform: `translate(-50%, -50%) rotate(${-rotation.value}deg)`,
+  }
 }
 
 function select(i) {
@@ -122,6 +128,7 @@ function select(i) {
   box-shadow:
     inset 0 0 7px rgba(10, 2, 45, 0.8),
     0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .rotary__hole:hover {
@@ -191,7 +198,8 @@ function select(i) {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .rotary__face {
+  .rotary__face,
+  .rotary__hole {
     transition: none;
   }
 }
