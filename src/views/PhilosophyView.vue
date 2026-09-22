@@ -2,7 +2,7 @@
   <section>
     <h2>Leadership Philosophy</h2>
     <div class="badge-row">
-      <span class="pill-badge">Blended Style</span>
+      <span class="pill-badge">Democratic</span>
       <span class="pill-badge">Theory X</span>
     </div>
 
