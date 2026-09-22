@@ -1,6 +1,10 @@
 <template>
   <div class="app-shell">
-    <header class="app-header">
+    <header
+      class="app-header"
+      :class="{ 'app-header--hidden': route.name === 'opening' }"
+      :aria-hidden="route.name === 'opening'"
+    >
       <h1 class="app-title">Max Hilton</h1>
     </header>
 
@@ -36,6 +40,13 @@ const route = useRoute()
 
 .app-header {
   text-align: center;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.app-header--hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .app-title {
