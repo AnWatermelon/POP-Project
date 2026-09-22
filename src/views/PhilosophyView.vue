@@ -3,7 +3,7 @@
     <h2>Leadership Philosophy</h2>
     <div class="badge-row">
       <span class="pill-badge">Blended Style</span>
-      <span class="pill-badge">Theory Z</span>
+      <span class="pill-badge">Theory X</span>
     </div>
 
     <div class="philosophy-grid">
@@ -31,7 +31,7 @@
       <div class="philosophy-card">
         <div class="card-header">
           <span class="card-tag">Execution</span>
-          <h3>Directive & Theory Z Balance</h3>
+          <h3>Directive & Theory X Balance</h3>
         </div>
         <ul class="bullet-list">
           <li>
@@ -39,7 +39,7 @@
             Maintaining clear expectations and discipline when safety, compliance, or deadlines are non-negotiable.
           </li>
           <li>
-            <strong>Theory Z Context:</strong>
+            <strong>Theory X Context:</strong>
             Working with high schoolers and novice trainees demands both a structured, deterministic approach and the flexibility to work with a group's particular needs.
           </li>
           <li>
