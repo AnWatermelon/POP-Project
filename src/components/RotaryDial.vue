@@ -23,9 +23,7 @@
 
       <div class="rotary__stop" aria-hidden="true"></div>
 
-      <div class="rotary__hub">
-        <span class="rotary__hub-label">{{ activeEntry?.label }}</span>
-      </div>
+      <div class="rotary__hub" aria-hidden="true"></div>
     </div>
   </div>
 </template>
@@ -47,8 +45,6 @@ const activeIndex = computed(() => {
   const i = entries.findIndex((e) => e.id === route.name)
   return i === -1 ? 0 : i
 })
-
-const activeEntry = computed(() => entries[activeIndex.value])
 
 // Rotating the whole face by -activeIndex * step always brings the active
 // button to the top (-90deg, where the finger stop sits), regardless of
@@ -136,14 +132,14 @@ function select(i) {
 }
 
 .rotary__hole:focus-visible {
-  outline: 3px solid var(--seagrass);
+  outline: 3px solid var(--wine-plum);
   outline-offset: 3px;
 }
 
 .rotary__hole--active {
   box-shadow:
     inset 0 0 6px rgba(10, 2, 45, 0.8),
-    0 0 0 3.5px var(--seagrass);
+    0 0 0 3.5px var(--wine-plum);
 }
 
 .rotary__digit {
@@ -186,16 +182,6 @@ function select(i) {
     0 0 0 4px #3b111b,
     inset 0 0 12px rgba(20, 4, 8, 0.7);
   pointer-events: none;
-}
-
-.rotary__hub-label {
-  font-family: var(--font-display);
-  color: var(--seagrass);
-  font-size: clamp(0.75rem, 1.8vmin, 1.1rem);
-  text-align: center;
-  padding: 0 10%;
-  font-weight: 600;
-  letter-spacing: 0.02em;
 }
 
 @media (prefers-reduced-motion: reduce) {

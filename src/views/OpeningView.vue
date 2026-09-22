@@ -31,7 +31,7 @@
   background: radial-gradient(circle at 40% 35%, #873648, #461622 80%);
   box-shadow:
     inset 0 0 10px rgba(0, 0, 0, 0.4),
-    0 0 0 3px var(--seagrass);
+    0 0 0 3px var(--dusk-blue);
   display: flex;
   align-items: center;
   justify-content: center;

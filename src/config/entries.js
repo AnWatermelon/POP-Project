@@ -4,7 +4,7 @@
 // change, and no angle is hard-coded anywhere else in the app.
 //
 //   id        - must match the route `name` below, and be unique
-//   label     - shown on the dial button and in the centre readout
+//   label     - shown on the dial button
 //   path      - URL path for this page
 //   component - lazy-loaded view component
 

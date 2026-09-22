@@ -12,7 +12,7 @@
 .quote {
   margin: 0 0 1rem;
   padding-left: 1.25rem;
-  border-left: 3px solid var(--seagrass);
+  border-left: 3px solid var(--wine-plum);
   font-family: var(--font-display);
   font-size: 1.1rem;
   color: var(--color-accent);

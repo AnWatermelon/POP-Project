@@ -16,9 +16,9 @@
   display: inline-block;
   padding: 0.35rem 0.9rem;
   border-radius: 999px;
-  background: rgba(99, 154, 136, 0.16);
-  border: 1px solid rgba(99, 154, 136, 0.35);
-  color: #295c4e;
+  background: rgba(58, 86, 131, 0.12);
+  border: 1px solid rgba(58, 86, 131, 0.25);
+  color: var(--dusk-blue);
   font-family: var(--font-display);
   font-size: 0.85rem;
   font-weight: 600;

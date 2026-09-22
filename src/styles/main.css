@@ -2,17 +2,14 @@
   /* CSS HEX */
   --wine-plum: #6b2737;
   --bright-snow: #fbfaf8;
-  --seagrass: #639a88;
   --dusk-blue: #3a5683;
   --navy-electric: #2708a0;
 
   /* CSS HSL */
   --wine-plum-hsl: hsla(346, 47%, 29%, 1);
   --bright-snow-hsl: hsla(40, 27%, 98%, 1);
-  --seagrass-hsl: hsla(160, 22%, 50%, 1);
   --dusk-blue-hsl: hsla(217, 39%, 37%, 1);
   --navy-electric-hsl: hsla(252, 90%, 33%, 1);
-
   /* Semantic Theme Tokens */
   --color-bg: var(--bright-snow);
   --color-bg-alt: #ffffff;
@@ -21,7 +18,7 @@
   --color-text-muted: var(--dusk-blue);
   --color-accent: var(--navy-electric);
   --color-brand: var(--wine-plum);
-  --color-highlight: var(--seagrass);
+  --color-highlight: var(--wine-plum);
 
   --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
   --font-body: 'Work Sans', system-ui, sans-serif;
