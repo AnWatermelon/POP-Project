@@ -1,18 +1,12 @@
 <template>
   <section>
     <h2>Leadership Orientation</h2>
-    <p class="orientation-badge">Relationship-oriented</p>
+    <p class="orientation-badge">Task-oriented</p>
     <p>
-      Of task, relationship, and change behaviors, I lean most on relationship
-      behaviors. This semester that's shown up in joining several groups in new
-      classes and meeting new people early — work for those groups hasn't really
-      kicked off yet, and no one knows each other, so it's the right moment to
-      build those relationships before task pressure sets in.
-    </p>
-    <p>
-      I'd also like to keep building sociability more deliberately — one concrete
-      goal is to talk to at least one person I haven't spoken to yet this
-      semester.
+      I lean toward task-oriented behaviors for the same reason I lean somewhat authoritarian. 
+      For example, a student I had that performed excellently in practical and theoretical tests was struggling with a specific skill and falling behind the rest of the class. 
+      I told my co-instructor to move forward with the rest of the class and worked hard with the student until they finally got it done well. 
+      They quickly mastered the remaining skills, caught up to the rest of the class, and eventually passed with flying colors.
     </p>
   </section>
 </template>

@@ -18,15 +18,13 @@ const strengths = [
       "I've personally seen the benefit of projecting confidence as a lifeguard instructor. I'm considered one of the best instructors at my job — not because I'm the most skillful or the best at explaining things, but because projecting confidence helps my students feel confident too, which helps them become the best they can be.",
   },
   {
-    name: '[Add a second strength]',
+    name: 'Thinker',
     description:
-      'A free assessment like High5 or VIA can help surface this one — swap in the result along with a sentence on how it shows up for you.',
-    placeholder: true,
+      'I think constantly about everything I sense and the "why" behind it.',
   },
   {
-    name: '[Add a third strength]',
-    description: 'Same as above — at least three strengths are required for this section.',
-    placeholder: true,
+    name: 'Strategist',
+    description: 'I like to plan thoroughly before taking action.',
   },
 ]
 </script>

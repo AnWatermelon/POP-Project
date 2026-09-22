@@ -17,17 +17,27 @@
 <script setup>
 const skillGroups = [
   {
-    category: 'Administrative',
+    category: 'Conceptual',
     items: [
       {
-        name: 'Scheduling',
-        context: 'Bent Tree',
-        description: 'Balancing the individual preferences and needs of many employees into a larger whole.',
+        name: 'Fast Learning',
+        context: 'General',
+        description: 'Able to pick up new material and situations quickly.',
       },
       {
         name: 'Attention to Detail',
-        context: 'All',
-        description: 'Thorough, and committed to seeing work done right.',
+        context: 'Internship',
+        description: 'Thorough, and committed to seeing work done right. At my internship I worked on an extremely intricate codebase that required hours of research to make a change.',
+      },
+    ],
+  },
+  {
+    category: 'Administrative',
+    items: [
+      {
+        name: 'Managing People',
+        context: 'Lifeguarding',
+        description: 'Practical management experience from managing 10+ lifeguards at a time.',
       },
     ],
   },
@@ -35,29 +45,14 @@ const skillGroups = [
     category: 'Interpersonal',
     items: [
       {
-        name: 'Leadership',
-        context: 'Oak Point',
-        description: 'Practical leadership experience, gained on the job.',
-      },
-      {
         name: 'Mentoring',
-        context: 'Oak Point',
-        description: 'Able to empathize with and understand the people I work with.',
-      },
-    ],
-  },
-  {
-    category: 'Conceptual',
-    items: [
-      {
-        name: 'Problem-Solving',
-        context: 'All',
-        description: 'Ability to work through problems as they come up.',
+        context: 'Teaching',
+        description: 'I have taught over 150 students over the course of my teaching career.',
       },
       {
-        name: 'Fast Learning',
-        context: 'All',
-        description: 'Able to pick up new material and situations quickly.',
+        name: 'Perspective Taking',
+        context: 'General',
+        description: "It is easy for me to see things from other's perspectives and play devil's advocate.",
       },
     ],
   },

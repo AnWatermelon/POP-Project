@@ -148,6 +148,7 @@ function select(i) {
 
 .rotary__digit {
   font-family: var(--font-display);
+  font-weight: 600;
   font-size: clamp(0.9rem, 2.4vmin, 1.4rem);
   line-height: 1;
   color: var(--bright-snow);

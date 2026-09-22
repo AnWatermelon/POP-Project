@@ -2,15 +2,9 @@
   <section>
     <h2>Conclusion</h2>
     <blockquote class="quote">
-      "[Add a quote that inspires you here.]"
-      <footer>— [Attribution]</footer>
+      "A leader is one who knows the way, goes the way, and shows the way."
+      <footer>— John C. Maxwell</footer>
     </blockquote>
-    <p class="quote-note">
-      <!-- TODO: the quote doesn't have to be about leadership specifically — if
-           it isn't, add a sentence here on how you connect it to leadership. -->
-      Add a sentence here on why this quote resonates with you, and how it
-      connects to how you lead.
-    </p>
   </section>
 </template>
 

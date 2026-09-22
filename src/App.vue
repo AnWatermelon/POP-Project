@@ -1,7 +1,7 @@
 <template>
   <div class="app-shell">
     <header class="app-header">
-      <h1 class="app-title">Your Name</h1>
+      <h1 class="app-title">Max Hilton</h1>
       <p class="app-tagline">Turn the dial to explore.</p>
     </header>
 

@@ -1,25 +1,9 @@
 <template>
   <section>
-    <h2>Career Vision Statement</h2>
+    <h2>Mission Statement</h2>
     <p class="vision-statement">
-      "[Your one-sentence career vision statement goes here.]"
+      "I want to increase the societal standard of technical literacy by spreading awareness and encouraging interest in order to get closer to a world where the average person does not have to be reliant on Big Tech."
     </p>
-
-    <h3>Values that should shape it</h3>
-    <ul class="values-list">
-      <li>
-        Motivated most by work with a tangible, positive impact on my life —
-        especially things that make me more independent.
-      </li>
-      <li>
-        Believe people in general are motivated by a higher purpose, or by
-        feeling part of something greater than themselves.
-      </li>
-      <li>
-        Demotivated by work that feels insurmountable, or that's just long hours
-        of grinding without a clear end.
-      </li>
-    </ul>
   </section>
 </template>
 
