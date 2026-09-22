@@ -62,19 +62,4 @@
   line-height: 1.1;
   letter-spacing: 0.02em;
 }
-
-.trait {
-  margin: 0;
-  font-size: 1.2rem;
-  color: var(--color-text-muted);
-  line-height: 1.4;
-}
-
-.trait strong {
-  color: var(--wine-plum);
-}
-
-.trait-note {
-  max-width: 60ch;
-}
 </style>

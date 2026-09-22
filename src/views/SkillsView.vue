@@ -1,15 +1,19 @@
 <template>
   <section>
     <h2>Personal Skills</h2>
-    <div v-for="group in skillGroups" :key="group.category" class="skill-group">
-      <h3>{{ group.category }}</h3>
-      <ul class="skill-list">
-        <li v-for="skill in group.items" :key="skill.name">
-          <span class="skill-name">{{ skill.name }}</span>
-          <span class="skill-context">{{ skill.context }}</span>
-          <p>{{ skill.description }}</p>
-        </li>
-      </ul>
+    <div class="skills-container">
+      <div v-for="group in skillGroups" :key="group.category" class="skill-group">
+        <h3>{{ group.category }}</h3>
+        <ul class="skill-list">
+          <li v-for="skill in group.items" :key="skill.name">
+            <div class="skill-header">
+              <span class="skill-name">{{ skill.name }}</span>
+              <span class="skill-context">{{ skill.context }}</span>
+            </div>
+            <p>{{ skill.description }}</p>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
 </template>
@@ -21,13 +25,13 @@ const skillGroups = [
     items: [
       {
         name: 'Fast Learning',
-        context: 'General',
-        description: 'Able to pick up new material and situations quickly.',
+        context: 'Internship',
+        description: 'Rapidly absorbing new technical frameworks, concepts, and dynamic environments. Wrote code that made it to production websites within two weeks of starting past two internships.',
       },
       {
         name: 'Attention to Detail',
         context: 'Internship',
-        description: 'Thorough, and committed to seeing work done right. At my internship I worked on an extremely intricate codebase that required hours of research to make a change.',
+        description: 'Dedicated to precision and code quality; worked on codebase that requires hours of research to make even simple changes',
       },
     ],
   },
@@ -37,7 +41,12 @@ const skillGroups = [
       {
         name: 'Managing People',
         context: 'Lifeguarding',
-        description: 'Practical management experience from managing 10+ lifeguards at a time.',
+        description: 'Direct managerial experience supervising and coordinating active shifts of 10+ lifeguards.',
+      },
+      {
+        name: 'Operational Coordination',
+        context: 'Lifeguarding',
+        description: 'Scheduling rotations, managing surveillance zones, and maintaining emergency protocol readiness.',
       },
     ],
   },
@@ -47,12 +56,12 @@ const skillGroups = [
       {
         name: 'Mentoring',
         context: 'Teaching',
-        description: 'I have taught over 150 students over the course of my teaching career.',
+        description: 'Guided and instructed over 150 students through individualized and group coaching to achieve Red Cross certification.',
       },
       {
         name: 'Perspective Taking',
         context: 'General',
-        description: "It is easy for me to see things from other's perspectives and play devil's advocate.",
+        description: 'Empathetic listening and evaluating multiple viewpoints to build consensus and address team concerns.',
       },
     ],
   },
@@ -60,12 +69,11 @@ const skillGroups = [
 </script>
 
 <style scoped>
-.skill-group {
-  margin-bottom: 1.5rem;
+.skills-container {
+  display: grid;
+  gap: 1.25rem;
 }
-.skill-group:last-child {
-  margin-bottom: 0;
-}
+
 .skill-group h3 {
   font-family: var(--font-display);
   color: var(--wine-plum);
@@ -74,28 +82,50 @@ const skillGroups = [
   text-transform: uppercase;
   letter-spacing: 0.04em;
 }
+
 .skill-list {
   list-style: none;
   padding: 0;
+  margin: 0;
   display: grid;
-  gap: 0.75rem;
+  gap: 0.65rem;
 }
+
 .skill-list li {
-  padding: 0.85rem 1rem;
+  padding: 0.75rem 1rem;
   border-radius: 8px;
   background: rgba(58, 86, 131, 0.05);
   border: 1px solid rgba(58, 86, 131, 0.1);
 }
+
+.skill-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
 .skill-name {
   font-family: var(--font-display);
   font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-accent);
 }
+
 .skill-context {
-  color: var(--color-text-muted);
-  font-size: 0.8rem;
-  margin-left: 0.5rem;
+  display: inline-block;
+  font-size: 0.75rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  background: rgba(58, 86, 131, 0.1);
+  color: var(--dusk-blue);
+  font-weight: 500;
 }
+
 .skill-list p {
-  margin: 0.3rem 0 0;
+  margin: 0.25rem 0 0;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: var(--color-text);
 }
 </style>
