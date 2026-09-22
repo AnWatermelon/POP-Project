@@ -1,44 +1,10 @@
 <template>
   <section>
     <h2>Conclusion</h2>
-
     <blockquote class="quote">
       "A leader is one who knows the way, goes the way, and shows the way."
       <footer>— John C. Maxwell</footer>
     </blockquote>
-
-    <div class="connection-section">
-      <div class="section-header">
-        <span class="card-tag">Synthesis</span>
-        <h3>Connection to Personal Leadership</h3>
-      </div>
-
-      <div class="connection-grid">
-        <div class="connection-card">
-          <span class="step-num">01</span>
-          <div class="card-body">
-            <h4>"Knows the Way"</h4>
-            <p><strong>Strategic & Conceptual:</strong> Grounded in thorough analytical preparation, understanding root causes, and mastering the necessary technical skills.</p>
-          </div>
-        </div>
-
-        <div class="connection-card">
-          <span class="step-num">02</span>
-          <div class="card-body">
-            <h4>"Goes the Way"</h4>
-            <p><strong>Conscientious & Disciplined:</strong> Leading by example, maintaining personal accountability, and embodying the standards expected of the team.</p>
-          </div>
-        </div>
-
-        <div class="connection-card">
-          <span class="step-num">03</span>
-          <div class="card-body">
-            <h4>"Shows the Way"</h4>
-            <p><strong>Task & Mentorship:</strong> Guiding others through clear expectations, directive coaching, and dedicated support to elevate individual capability.</p>
-          </div>
-        </div>
-      </div>
-    </div>
   </section>
 </template>
 

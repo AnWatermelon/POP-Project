@@ -1,9 +1,11 @@
 <template>
   <section>
     <div class="opening-header">
-      <div class="avatar-placeholder" aria-hidden="true">
-        <span>Photo</span>
-      </div>
+      <img
+        :src="profilePhoto"
+        alt="Max Hilton"
+        class="avatar"
+      />
       <div class="opening-intro">
         <h2>Max Hilton</h2>
         <p class="trait">
@@ -13,6 +15,10 @@
     </div>
   </section>
 </template>
+
+<script setup>
+import profilePhoto from '../assets/maxfhilton52gmail.com-1-4.jpg'
+</script>
 
 <style scoped>
 .opening-header {
@@ -49,6 +55,7 @@
   height: 170px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: top;
   box-shadow:
     0 0 0 3px var(--dusk-blue),
     0 8px 24px rgba(0, 0, 0, 0.15);

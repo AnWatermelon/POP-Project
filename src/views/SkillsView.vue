@@ -5,12 +5,17 @@
       <div v-for="group in skillGroups" :key="group.category" class="skill-group">
         <h3>{{ group.category }}</h3>
         <ul class="skill-list">
-          <li v-for="skill in group.items" :key="skill.name">
-            <div class="skill-header">
-              <span class="skill-name">{{ skill.name }}</span>
-              <span class="skill-context">{{ skill.context }}</span>
+          <li v-for="skill in group.items" :key="skill.name" class="skill-item">
+            <div class="skill-icon-box">
+              <img :src="skill.image" :alt="skill.name" class="skill-icon" />
             </div>
-            <p>{{ skill.description }}</p>
+            <div class="skill-info">
+              <div class="skill-header">
+                <span class="skill-name">{{ skill.name }}</span>
+                <span class="skill-context">{{ skill.context }}</span>
+              </div>
+              <p>{{ skill.description }}</p>
+            </div>
           </li>
         </ul>
       </div>
@@ -19,6 +24,13 @@
 </template>
 
 <script setup>
+import fastLearningImg from '../assets/fast-learning.png'
+import attentionToDetailImg from '../assets/attention-to-detail.png'
+import managingPeopleImg from '../assets/managing-people.jpg'
+import operationalCoordinationImg from '../assets/operational-coordination.jpg'
+import mentoringImg from '../assets/mentoring.png'
+import perspectiveTakingImg from '../assets/perspective-taking.png'
+
 const skillGroups = [
   {
     category: 'Conceptual',
@@ -27,11 +39,13 @@ const skillGroups = [
         name: 'Fast Learning',
         context: 'Internship',
         description: 'Rapidly absorbing new technical frameworks, concepts, and dynamic environments. Wrote code that made it to production websites within two weeks of starting past two internships.',
+        image: fastLearningImg,
       },
       {
         name: 'Attention to Detail',
         context: 'Internship',
         description: 'Dedicated to precision and code quality; worked on codebase that requires hours of research to make even simple changes',
+        image: attentionToDetailImg,
       },
     ],
   },
@@ -42,11 +56,13 @@ const skillGroups = [
         name: 'Managing People',
         context: 'Lifeguarding',
         description: 'Direct managerial experience supervising and coordinating active shifts of 10+ lifeguards.',
+        image: managingPeopleImg,
       },
       {
         name: 'Operational Coordination',
         context: 'Lifeguarding',
         description: 'Scheduling rotations, managing surveillance zones, and maintaining emergency protocol readiness.',
+        image: operationalCoordinationImg,
       },
     ],
   },
@@ -57,11 +73,13 @@ const skillGroups = [
         name: 'Mentoring',
         context: 'Teaching',
         description: 'Guided and instructed over 150 students through individualized and group coaching to achieve Red Cross certification.',
+        image: mentoringImg,
       },
       {
         name: 'Perspective Taking',
         context: 'General',
         description: 'Empathetic listening and evaluating multiple viewpoints to build consensus and address team concerns.',
+        image: perspectiveTakingImg,
       },
     ],
   },
@@ -91,11 +109,40 @@ const skillGroups = [
   gap: 0.65rem;
 }
 
-.skill-list li {
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
   padding: 0.75rem 1rem;
   border-radius: 8px;
   background: rgba(58, 86, 131, 0.05);
   border: 1px solid rgba(58, 86, 131, 0.1);
+}
+
+.skill-icon-box {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  background: #ffffff;
+  border: 1px solid rgba(58, 86, 131, 0.12);
+  box-shadow: 0 1px 3px rgba(58, 86, 131, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+}
+
+.skill-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.skill-info {
+  flex: 1;
+  min-width: 0;
 }
 
 .skill-header {
@@ -122,7 +169,7 @@ const skillGroups = [
   font-weight: 500;
 }
 
-.skill-list p {
+.skill-info p {
   margin: 0.25rem 0 0;
   font-size: 0.9rem;
   line-height: 1.45;

@@ -13,6 +13,10 @@
           </li>
         </ul>
       </div>
+      <blockquote class="quote">
+        "He finished a side project we had setup for him in a few days and then contributed to the Dynos like a normal software engineer.  He was delivering at the Assoc Software engineer or even Software engineer level for nearly his entire internship."
+      <footer>— Former Manager (Internship)</footer>
+      </blockquote>
     </div>
   </section>
 </template>
@@ -131,5 +135,17 @@ const strengths = [
 
 .bullet-list strong {
   color: var(--color-accent);
+}
+
+.quote {
+  margin: 0 0 1.5rem;
+  padding: 0.85rem 1.25rem;
+  border-left: 3px solid var(--wine-plum);
+  background: rgba(107, 39, 55, 0.04);
+  border-radius: 0 8px 8px 0;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  line-height: 1.55;
+  color: var(--wine-plum);
 }
 </style>

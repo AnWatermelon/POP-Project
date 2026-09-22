@@ -6,6 +6,14 @@
       <span class="pill-badge">Execution & Mastery</span>
     </div>
 
+    <div class="orientation-banner">
+      <img
+        :src="taskOrientationImg"
+        alt="Task-Oriented Leadership illustration"
+        class="orientation-banner-img"
+      />
+    </div>
+
     <div class="orientation-grid">
       <div class="orientation-card">
         <div class="card-header">
@@ -52,7 +60,31 @@
   </section>
 </template>
 
+<script setup>
+import taskOrientationImg from '../assets/task-orientation.jpg'
+</script>
+
 <style scoped>
+.orientation-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.25rem;
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid rgba(58, 86, 131, 0.12);
+  padding: 0.75rem 1rem;
+}
+
+.orientation-banner-img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  max-height: 200px;
+  object-fit: contain;
+  display: block;
+}
+
 .badge-row {
   display: flex;
   flex-wrap: wrap;
